@@ -233,6 +233,11 @@ body{
     color: #727272;
     margin-top: 5px;
 }
+.achievment-card:hover{
+    background-image: linear-gradient(to bottom right, rgba(245, 165, 18, 0.699), #FF900E);
+    transform: rotate(360deg);
+    transition: .8s;
+}
 
 
 /* ---------sponsors section styles ------------*/
@@ -262,11 +267,36 @@ body{
     width: 100%;
 }
 
+    /*-------- Bonus section styles------- */
+    .project-section{
+        margin: 80px 100px;
+    }
+    .project-section h2{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .project-section p{
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .architect-design{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .project-photo{
+        max-width: 400px;
+    }
+    .project-photo img{
+        width: 100%;
+        border-radius: 5px;
+    }
 
 /* -------footer section styles------ */
 .footer-section{
     text-align: center;
-    max-width: 80%;
+    max-width: 85%;
     background: #FFF4E7;
     margin: 0 auto;
 }
@@ -361,6 +391,15 @@ body{
     .sponsors-companies{
         flex-direction: column;
         row-gap: 40px;
+    }
+
+
+    /* -------bonus area responsive------- */
+    .project-section{
+        margin: 80px 30px;
+    }
+    .architect-design{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     
