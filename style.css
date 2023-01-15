@@ -10,8 +10,6 @@ body{
     font-family: 'Work Sans';
 }
 
-
-
 /* -------header area styles starts here------*/
 .header-section{
     background: rgba(255, 144, 14, 0.1);;
@@ -20,7 +18,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 150px;
+    padding: 40px 100px;
 }
 .nav-bar h3{
     font-weight: 700;
@@ -87,8 +85,6 @@ body{
 .feature-list{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* display: flex;
-    flex-direction: row; */
     justify-content: center;
     align-items: center;
     column-gap: 50px;
@@ -132,8 +128,6 @@ body{
 .feature-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* display: flex;
-    flex-direction: row; */
     justify-content: center;
     align-items: center;
     column-gap: 48px;
@@ -219,14 +213,71 @@ body{
     align-items: center;
     gap: 70px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .achievment-card{
     border: 1px solid #FF900E;
     padding: 20px;
     text-align: center;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
 }
+.achievment-card h4{
+    font-weight: 600;
+    font-size: 35px;
+    color: #424242;
+}
+.achievment-card p{
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
+}
+
+
+/* ---------sponsors section styles ------------*/
+.sponsors-section{
+    margin: 80px 100px;
+    text-align: center;
+}
+.sponsors-section h3{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.sponsors-section p{
+    color: #727272;
+    margin-bottom: 50px;
+}
+.sponsors-companies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.company-logo img{
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+
+/* -------footer section styles------ */
+.footer-section{
+    text-align: center;
+    max-width: 80%;
+    background: #FFF4E7;
+    margin: 0 auto;
+}
+.footer-section p{
+    padding: 30px;
+    color: #424242;
+}
+
+
+
+
 
 
 
@@ -275,34 +326,50 @@ body{
     /* feature details section */
     .feature-section{
         grid-template-columns: repeat(1, 1fr);
-        margin: 60px 20px;
+        margin: 60px 30px;
     }
     .feature-photo{
         margin-top: 40px;
     }
-  
     .experience-btn{
         bottom: 70px;
         left: 50px;
+        padding: 20px;
     }
 
-    /* our task and achievemnt sectio styles */
+    /* our task and achievemnt section responsive */
     .task-section{
         margin: 0px;
         padding: 30px;
+        padding-top: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
     }
     .our-achievment{
         flex-direction: column;
         align-items: center;
+        width: 80%;
+        margin: auto auto;
     }
-  
+   
+    /* -----sponsors section responsive------ */
+    .sponsors-section{
+        margin: 60px 30px;
+    }
+    .sponsors-companies{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
     
-
-
-
-
-    .hide{
-        display: none;
+    /* --------footer area responsive------- */
+    .footer-section{
+        max-width: 100%;
+        }
+    .footer-section p{
+        line-height: 23px;
     }
 
 }
