@@ -365,8 +365,9 @@ body{
     }
     .experience-btn{
         bottom: 70px;
-        left: 50px;
-        padding: 20px;
+        left: 35px;
+        padding:10px 20px;
+        text-align: center;
     }
 
     /* our task and achievemnt section responsive */
@@ -414,3 +415,5 @@ body{
     }
 
 }
+
+/* xxxxxxxxxxx------ THE END ------xxxxxxxxxxx */
