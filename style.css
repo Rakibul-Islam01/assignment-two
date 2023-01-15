@@ -101,11 +101,11 @@ body{
 }
 .feature-gallery .feature-item{
     max-width: 340px;
+    border-radius: 5px;
 }
 .feature-gallery .feature-item img{
     width: 100%;
 }
-
 .feature-info h3{
     color: #000;
     font-size: 45px;
@@ -162,17 +162,17 @@ body{
     row-gap: 20px;
     margin-right: 60px;
 }
-.feature-item{
+.item-details{
     box-shadow: 2px 2px 16px 2px lightgray;
     padding: 25px;
 }
-.feature-item h4{
+.item-details h4{
     color: #131313;
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
 }
-.feature-item p{
+.item-details p{
     font-size: 16px;
     line-height: 26px;
     color: #727272;
@@ -201,7 +201,32 @@ body{
 
 }
 
-
+/* ----our task and achievment sectin styles----- */
+.task-section{
+    margin: 80px 100px;
+}
+.task-section > h3{
+    font-weight: 700;
+    font-size: 45px;
+}
+.task-section > p{
+    color: #727272;
+    line-height: 26px;
+}
+.our-achievment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 50px;
+}
+.achievment-card{
+    border: 1px solid #FF900E;
+    padding: 20px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+}
 
 
 
@@ -210,10 +235,11 @@ body{
 
 /* ---------Responsive for mobile-------- */
 @media screen and (max-width: 576px) {
+    /* responsive for navbar */
     .nav-bar{
         flex-direction: column;
         row-gap: 50px;
-        padding: 30px 20px ;
+        padding: 30px 20px;
     }
     .menu-items{
         flex-direction: column;
@@ -221,28 +247,35 @@ body{
     .header-info{
         padding: 20px 30px ;
     }
+    .header-banner img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* feature gallery and info */
     .feature-list {
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+        margin: 15px;
         align-items: center;
-        margin: 60px 30px;
     }
     .feature-gallery{
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        margin-bottom: 30px;
-    }
-    .feature-item{
-    max-width: 100%;
-    }
-    .feature-section{
-        grid-template-columns: repeat(1, 1fr);
-        margin: 80px 20px;
-        align-items: center;
-        justify-content: center;
+        margin-bottom: 40px;
+        margin: 0 auto;
     }
     .feature-items{
-        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .feature-info{
+       margin: 30px 10px 30px 10px;
+    }
+
+    /* feature details section */
+    .feature-section{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 60px 20px;
     }
     .feature-photo{
         margin-top: 40px;
@@ -251,6 +284,25 @@ body{
     .experience-btn{
         bottom: 70px;
         left: 50px;
+    }
+
+    /* our task and achievemnt sectio styles */
+    .task-section{
+        margin: 0px;
+        padding: 30px;
+    }
+    .our-achievment{
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    
+
+
+
+
+    .hide{
+        display: none;
     }
 
 }
