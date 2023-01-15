@@ -254,6 +254,7 @@ body{
 .sponsors-section p{
     color: #727272;
     margin-bottom: 50px;
+    line-height: 23px;
 }
 .sponsors-companies{
     display: flex;
@@ -279,6 +280,7 @@ body{
     .project-section p{
         font-weight: 600;
         margin-bottom: 20px;
+        font-size: 20px;
     }
     .architect-design{
         display: grid;
